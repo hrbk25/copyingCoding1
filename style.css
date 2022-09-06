@@ -58,6 +58,17 @@ li{
     background-color: #000;
 }
 
+.c-img{
+    width: 100%;
+    background-color: blue;
+}
+
+.c-img::before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
 
 /* ヘッダー↓ */
 .p-header .container{
@@ -90,11 +101,37 @@ li{
     margin: 40px 0 0;
 }
 .p-home_section_head{
-    
-
+    margin: 0 0 24px;
 }
 .p-home_section_body{
     
+}
+
+/* メイン　ボディ */
+.p-arealist{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+.p-arealist_item{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding: 8px;
+}
+.p-arealist_item_img{
+    width: 72px;
+    margin: 0 16px 0 0;
+}
+
+
+.p-cardlist{
+    display: flex;
+    margin: -8px;
+}
+.p-cardlist_item{
+    flex: 1 1 0%;
+    padding: 8px;
 }
 
 /* フッター↓ */
